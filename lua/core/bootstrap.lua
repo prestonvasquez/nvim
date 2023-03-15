@@ -17,10 +17,6 @@ vim.g.mapleader = ' '
 -- Set line numbers
 vim.opt.number = true
 
--- Set vertical line
-vim.opt.colorcolumn = "80,120"
-vim.cmd("highlight ColorColumn ctermbg=lightcyan guibg=#2C3539")
-
 -- Set folding method to syntax
 vim.opt.foldmethod = "syntax"
 

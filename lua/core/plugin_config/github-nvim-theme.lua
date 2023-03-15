@@ -10,3 +10,6 @@ vim.g.github_colors = {
 -- Load the colorscheme
 -- vim.cmd("colorscheme tokyonight-night")
 vim.cmd("colorscheme github_dark_default")
+
+vim.opt.colorcolumn = "80,120"
+vim.api.nvim_set_hl(0, "ColorColumn", { bg="#4c3ac5" })

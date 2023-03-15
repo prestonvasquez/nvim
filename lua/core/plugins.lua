@@ -56,6 +56,7 @@ return require('packer').startup(function(use)
 
   -- Themes
   use 'projekt0n/github-nvim-theme'
+  use 'folke/tokyonight.nvim'
 
   -- Install ChatGPT plugin
   use {
