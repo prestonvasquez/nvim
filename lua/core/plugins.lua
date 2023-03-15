@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
 
   -- GUI
   use 'vim-airline/vim-airline'
+  use 'vim-airline/vim-airline-themes'
   use 'preservim/nerdtree'
   use 'psliwka/vim-smoothie' -- Smooth Scrolling
   use 'easymotion/vim-easymotion'
@@ -57,6 +58,7 @@ return require('packer').startup(function(use)
   -- Themes
   use 'projekt0n/github-nvim-theme'
   use 'folke/tokyonight.nvim'
+  use 'patstockwell/vim-monokai-tasty'
 
   -- Install ChatGPT plugin
   use {
