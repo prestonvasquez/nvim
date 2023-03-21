@@ -52,8 +52,17 @@ return require('packer').startup(function(use)
 
   -- PR Review
   -- use { 'ldelossa/gh.nvim', 'ldelossa/litee.nvim' }
-  use 'pwntester/octo.nvim'
-  use 'kyazdani42/nvim-web-devicons'
+  use {
+    'pwntester/octo.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope.nvim',
+      'kyazdani42/nvim-web-devicons',
+    },
+    config = function ()
+      require"octo".setup()
+    end
+  }
 
   -- Themes
   use 'projekt0n/github-nvim-theme'
