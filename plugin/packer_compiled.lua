@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/preston.vasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/preston.vasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/preston.vasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/preston.vasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/preston.vasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/prestonvasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/prestonvasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/prestonvasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/prestonvasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/prestonvasquez/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,128 +76,133 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["ChatGPT.nvim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/ChatGPT.nvim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/ChatGPT.nvim",
     url = "https://github.com/jackMort/ChatGPT.nvim"
   },
   ale = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/ale",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/ale",
     url = "https://github.com/dense-analysis/ale"
   },
   ["coc.nvim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
   ["copilot.vim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
   ["github-nvim-theme"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
   nerdtree = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/nerdtree",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
   ["nui.nvim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-blame-line"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/nvim-blame-line",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/nvim-blame-line",
     url = "https://github.com/tveskag/nvim-blame-line"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["octo.nvim"] = {
     config = { "\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tocto\frequire\0" },
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/octo.nvim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/octo.nvim",
     url = "https://github.com/pwntester/octo.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  purify = {
+    loaded = true,
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/purify",
+    url = "https://github.com/kyoz/purify"
   },
   ["rust.vim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/rust.vim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-airline"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-airline",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
   ["vim-airline-themes"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-delve"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-delve",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-delve",
     url = "https://github.com/sebdah/vim-delve"
   },
   ["vim-devicons"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-easymotion"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-easymotion",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-easymotion",
     url = "https://github.com/easymotion/vim-easymotion"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-gitgutter"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   },
   ["vim-go"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-go",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-go",
     url = "https://github.com/fatih/vim-go"
   },
   ["vim-monokai-tasty"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
     url = "https://github.com/patstockwell/vim-monokai-tasty"
   },
   ["vim-smoothie"] = {
     loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-smoothie",
+    path = "/Users/prestonvasquez/.local/share/nvim/site/pack/packer/start/vim-smoothie",
     url = "https://github.com/psliwka/vim-smoothie"
   }
 }
