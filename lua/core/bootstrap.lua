@@ -33,3 +33,4 @@ vim.api.nvim_set_keymap("n", "<C-n>", ":ls<CR>:b<Space>", {noremap = true})
 
 -- Format JSON on save
 vim.cmd("autocmd FileType json autocmd BufWritePre <buffer> %!python3 -m json.tool")
+
