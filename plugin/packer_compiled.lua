@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
@@ -194,6 +189,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
     url = "https://github.com/patstockwell/vim-monokai-tasty"
+  },
+  ["vim-rhubarb"] = {
+    loaded = true,
+    path = "/Users/preston.vasquez/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
+    url = "https://github.com/tpope/vim-rhubarb"
   },
   ["vim-smoothie"] = {
     loaded = true,

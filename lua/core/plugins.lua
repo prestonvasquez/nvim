@@ -27,7 +27,8 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'airblade/vim-gitgutter'
   use 'tveskag/nvim-blame-line'
-  use 'github/copilot.vim'
+  --use 'github/copilot.vim'
+  use 'tpope/vim-rhubarb'
 
   -- Go
   use {
