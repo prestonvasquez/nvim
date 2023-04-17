@@ -66,7 +66,7 @@ return require('packer').startup(function(use)
   }
 
   -- Themes
-  use 'projekt0n/github-nvim-theme'
+  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
   use 'folke/tokyonight.nvim'
   use 'patstockwell/vim-monokai-tasty'
 
