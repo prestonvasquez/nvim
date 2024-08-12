@@ -12,6 +12,9 @@ return {
       -- Custom key mappings for cycling through buffers
       vim.api.nvim_set_keymap("n", "<Tab>", ":BufferNext<CR>", { noremap = true, silent = true })
       vim.api.nvim_set_keymap("n", "<S-Tab>", ":BufferPrevious<CR>", { noremap = true, silent = true })
+
+      -- Key mapping to close the current buffer
+      vim.api.nvim_set_keymap("n", "<leader>x", ":BufferClose<CR>", { noremap = true, silent = true })
     end,
     version = "^1.0.0", -- optional: only update when a new 1.x version is released
   },
