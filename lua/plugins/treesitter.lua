@@ -1,23 +1,12 @@
+-- LazyVim already provides a complete treesitter configuration.
+-- This file extends LazyVim's treesitter setup to add Go support.
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
-    build = ":TSUpdate",
-    opts = function()
-      return {
-        highlight = {
-          enable = true,
-          additional_vim_regex_highlighting = false,
-        },
-        ensure_installed = { "go", "javascript", "python", "lua" },
-      }
-    end,
-    config = function(_, opts)
-      -- Remove or comment out the line if not needed
-      -- dofile(vim.g.base46_cache .. "syntax")
-
-      -- Continue with setting up nvim-treesitter
-      require("nvim-treesitter.configs").setup(opts)
-    end,
+    opts = {
+      -- Add Go to the list of languages to ensure are installed
+      -- This extends LazyVim's default ensure_installed list
+      ensure_installed = { "go" },
+    },
   },
 }

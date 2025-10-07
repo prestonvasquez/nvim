@@ -1,5 +1,11 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 
+-- Disable LSP hover immediately
+require("config.disable-hover")
+
+-- Load inlay hints configuration
+require("config.inlay-hints")
+
 require("config.lazy")
 
 -- Show relative line numbers
