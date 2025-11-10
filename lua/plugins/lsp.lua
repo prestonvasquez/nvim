@@ -6,6 +6,7 @@ return {
         "gopls",
         "goimports",
         "gofumpt",
+        "texlab", -- LaTeX language server
       },
     },
   },
@@ -79,6 +80,34 @@ return {
             -- Disable hover handler to prevent automatic type info display
             vim.lsp.handlers["textDocument/hover"] = nil
           end,
+        },
+        texlab = {
+          settings = {
+            texlab = {
+              auxDirectory = ".",
+              bibtexFormatter = "texlab",
+              build = {
+                args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" },
+                executable = "latexmk",
+                forwardSearchAfter = false,
+                onSave = false,
+              },
+              chktex = {
+                onEdit = false,
+                onOpenAndSave = false,
+              },
+              diagnosticsDelay = 300,
+              formatterLineLength = 80,
+              forwardSearch = {
+                args = {},
+              },
+              latexFormatter = "latexindent",
+              latexindent = {
+                ["local"] = nil, -- path to .latexindent.yaml
+                modifyLineBreaks = false,
+              },
+            },
+          },
         },
       },
     },
