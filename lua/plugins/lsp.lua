@@ -1,6 +1,6 @@
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "gopls",
@@ -67,7 +67,11 @@ return {
               staticcheck = true,
               directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
               semanticTokens = true,
-              buildFlags = {"-tags=mage"},
+              buildFlags = {
+                "-tags=mage",
+                "-tags=aeoust",
+                "-tags=ceust",
+              },
               -- Completion settings to reduce type information verbosity
               matcher = "Fuzzy",
               symbolMatcher = "FastFuzzy",
