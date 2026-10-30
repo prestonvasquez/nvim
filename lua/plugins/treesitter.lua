@@ -3,10 +3,7 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      -- Add Go to the list of languages to ensure are installed
-      -- This extends LazyVim's default ensure_installed list
-      ensure_installed = { "go" },
-    },
+    -- Disable Tree-sitter entirely to avoid parser-related crashes
+    enabled = false,
   },
 }

@@ -68,9 +68,10 @@ return {
               directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
               semanticTokens = true,
               buildFlags = {
-                "-tags=mage",
-                "-tags=aeoust",
-                "-tags=ceust",
+                --"-tags=mage",
+                --"-tags=aeoust",
+                --"-tags=ceust",
+                "-tags=cse",
               },
               -- Completion settings to reduce type information verbosity
               matcher = "Fuzzy",

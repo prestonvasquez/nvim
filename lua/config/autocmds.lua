@@ -9,10 +9,10 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   callback = function()
     -- Save cursor position
     local save_cursor = vim.fn.getpos(".")
-    
+
     -- Remove trailing whitespace
     vim.cmd([[%s/\s\+$//e]])
-    
+
     -- Restore cursor position
     vim.fn.setpos(".", save_cursor)
   end,
@@ -26,15 +26,26 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   callback = function()
     -- Save cursor position
     local save_cursor = vim.fn.getpos(".")
-    
+
     -- Remove trailing whitespace but preserve double spaces at end of lines
     -- This regex matches 3 or more spaces, or 1 space followed by tabs/more spaces
     vim.cmd([[%s/\(\S\)\s\{3,\}$/\1  /e]])
     vim.cmd([[%s/\(\S\) \+\t\+$/\1  /e]])
     vim.cmd([[%s/\(\S\)\t\+$/\1/e]])
     vim.cmd([[%s/^\s\+$//e]])
-    
+
     -- Restore cursor position
     vim.fn.setpos(".", save_cursor)
   end,
 })
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  group = vim.api.nvim_create_augroup("GetSignsMutedDelete", { clear = true }),
+  callback = function()
+    vim.api.nvim_set_hl(0, "GitSignsDeleteVirtLn", { fg = "#a86b78", bg = "NONE" })
+    vim.api.nvim_set_hl(0, "GitSignsDeleteVirtLnInLine", { fg = "#e58a99", bg = "NONE" })
+  end,
+})
+
+vim.api.nvim_set_hl(0, "GitSignsDeleteVirtLn", { fg = "#a86b78", bg = "NONE" })
+vim.api.nvim_set_hl(0, "GitSignsDeleteVirtLnInLine", { fg = "#e58a99", bg = "NONE" })
